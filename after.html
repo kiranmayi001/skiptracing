@@ -1,0 +1,36 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+
+<body bgcolor=#a3cfb4>
+<div class="go-back-to-home">
+    <a class="link-to-home" href='/'>go back to home page</a>
+    </div>
+    <center>
+
+    <h1 class="heading">  Search Result :  </h1class>
+
+       <ol class="unordered">
+        {% for item in data1 %}
+         <li class="list">{{item}}</li>
+        {% endfor %}
+         </ol>
+
+
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+

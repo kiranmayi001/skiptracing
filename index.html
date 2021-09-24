@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>............
+    <meta charset="UTF-8">
+    <title>DERBE's Tracer Genie</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='js/loading-bar.css') }}">
+  <link href="static/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="loading-bar.js"></script>
+
+</head>
+<body>
+<div class="positioning">
+ <div class="background-image">
+     <image id="logo" src="../static/image/logo.jpg" alt="logo"/>
+
+     <img src="../static/image/skip.jpg" alt=""/>
+     <section class="search-sec">
+    <div class="contain">
+        <form action="{{url_for('search')}}" method="post">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text"name="name" class="form-control search-slt" placeholder="Name">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text"name="email" class="form-control search-slt" placeholder="Email Id">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text"name="wmob" class="form-control search-slt" placeholder="Mobile No">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" name="Org" class="form-control search-slt" placeholder="Organisation">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt"name="Desi" placeholder="Designation">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt"name="Wcity" placeholder="City">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="submit" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        </div>
+</section>
+
+</div>
+</body>
+</html>
+
+
+<!--<div class="ldBar"
+  style="width:100%;height:60px",
+  data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)",
+  data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20"
+></div>-->
